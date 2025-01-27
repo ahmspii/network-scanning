@@ -1,2 +1,2 @@
 # network-scanning
-port scanner
+This script performs fast port scanning by using threading to handle multiple ports simultaneously. It creates 500 threads, each responsible for checking if a port is open, reducing the overall scan time. A queue holds all the port numbers, and each thread grabs one port at a time to test. By dividing the work across many threads instead of scanning sequentially, the scan completes in less than 5 seconds. This concurrency allows faster results by checking multiple ports in parallel. 
